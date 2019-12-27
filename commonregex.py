@@ -18,7 +18,7 @@ street_address   = re.compile('\d{1,4} [\w\s]{1,20}(?:street|st|avenue|ave|road|
 zip_code         = re.compile(r'\b\d{5}(?:[-\s]\d{4})?\b')
 po_box           = re.compile(r'P\.? ?O\.? Box \d+', re.IGNORECASE)
 ssn              = re.compile('(?!000|666|333)0*(?:[0-6][0-9][0-9]|[0-7][0-6][0-9]|[0-7][0-7][0-2])[- ](?!00)[0-9]{2}[- ](?!0000)[0-9]{4}')
-icd10            = re.compile(r'[A-TV-Z][0-9][0-9AB]\.?[0-9A-TV-Z]{0,4}')
+icdten           = re.compile('[A-TV-Z][0-9][0-9AB]\.?[0-9A-TV-Z]{0,4}')
 
 
 regexes = {
@@ -38,7 +38,7 @@ regexes = {
   "zip_codes"        : zip_code,
   "po_boxes"         : po_box,
   "ssn_number"       : ssn,
-  "icd10_codes"      : icd10
+  "icd10_codes"      : icdten
 }
 
 class regex:
