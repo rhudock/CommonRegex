@@ -36,7 +36,7 @@ regexes = {
   "street_addresses" : street_address,
   "zip_codes"        : zip_code,
   "po_boxes"         : po_box,
-  "ssn_number"       : ssn
+  "ssn_number"       : ssn,
   "cpt_code"         : cpt
 }
 
